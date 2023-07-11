@@ -1,0 +1,87 @@
+header {
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $offWhite;
+  transition: $transition;
+  z-index: 4;
+  .active {
+    box-shadow: 0 1px 3px hsla(0, 0%, 0.2%, 0.2);
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .nav-open-btn,
+  .nav-close-btn {
+    font-size: 4rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    :is(.nav-open-btn, .nav-close-btn) {
+      width: 40px;
+    }
+  }
+  .navbar {
+    background: $offWhite;
+    position: fixed;
+    top: 0;
+    right: -280px;
+    height: 100vh;
+    width: 70%;
+    visibility: hidden;
+    transition: $transition;
+    box-shadow: -2px 0 4px hsla(0, 0%, 0%, 0.1);
+    opacity: 0;
+    &.active {
+      right: 0;
+      visibility: visible;
+      opacity: 1;
+    }
+    .nav-list {
+      font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .nav-item {
+        width: 100%;
+        padding: 20px;
+
+        .nav-link {
+          color: $veryDarkBlue;
+        }
+        .nav-link:hover {
+          color: $softRed;
+        }
+      }
+    }
+  }
+  .nav-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    &:hover {
+      color: var(--soft-red);
+    }
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: transparent;
+    pointer-events: none;
+    transition: var(--transition);
+  }
+
+  .overlay.active {
+    background: hsla(0, 0%, 0.5%, 0.8);
+    pointer-events: all;
+  }
+}

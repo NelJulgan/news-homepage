@@ -1,0 +1,34 @@
+.top-article-cards {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  .article-card {
+    display: flex;
+    gap: 2rem;
+
+    .article-title {
+      color: $veryDarkBlue;
+
+      &:hover {
+        color: $softRed;
+      }
+    }
+    .article-content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .article-card-img {
+      width: 100px;
+      height: 127px;
+    }
+
+    .article-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: $grayishBlue;
+    }
+    .article-text {
+      color: $darkGrayishBlue;
+    }
+  }
+}

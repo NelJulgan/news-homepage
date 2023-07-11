@@ -1,0 +1,24 @@
+.container {
+  padding: 0 20px;
+}
+
+$transition: 400ms all ease;
+$transition2: 200ms all ease-in-out;
+
+.btn {
+  padding: 2rem 3rem;
+  background-color: $softRed;
+  border: none;
+  color: $offWhite;
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 200px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: $transition2;
+  cursor: pointer;
+
+  &:hover {
+    background: $veryDarkBlue;
+  }
+}

@@ -1,0 +1,22 @@
+@import './abstract/index.css';
+@import './var/index.css';
+@import './layouts/index.css';
+
+body {
+  font-family: $mainFont;
+  background: $offWhite;
+  font-size: 16px;
+  font-weight: 400;
+  color: $veryDarkBlue;
+}
+
+/* Atribution */
+.attribution {
+  background: $veryDarkBlue;
+  font-size: 11px;
+  text-align: center;
+  color: beige;
+}
+.attribution a {
+  color: hsl(228, 90%, 81%);
+}
