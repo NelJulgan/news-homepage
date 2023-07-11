@@ -19,5 +19,5 @@ export default defineConfig({
       ],
     },
   },
-  base: '/vite-postcss-config/',
+  base: '/news-homepage-main/',
 });
