@@ -19,5 +19,5 @@ export default defineConfig({
       ],
     },
   },
-  base: '/news-homepage-main/',
+  base: '/news-homepage/',
 });
